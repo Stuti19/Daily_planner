@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styleTimeBox.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+          
+      </head>
+<body>
+    <header>
+        <div class="full">
+            <div class="p-3">
+                <div class="container navbaar" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">
+                  <div class="d-flex flex-wrap">
+                    <a href="/" class="d-flex text-white">
+                      <div class="bi me-2" width="35" height="32"></div>
+                    </a>
+          
+                    <ul class="nav">
+                      <li><a href="index.html" class="nav-link px-2 ">Home</a></li>
+                    </ul>
+                    <div class="nav-search">
+                      <select class="select">
+                        <option>All</option>
+                        <option>Imp</option>
+                      </select>
+                      <input placeholder="Search Task" class="Search-bar">
+                      <div class="search-logo">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+          
+          
+                    <!-- <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2"></button>
+                        <button type="button" class="btn btn-warning">Add Task</button>
+                      </div> -->
+                    <div class="end col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <ul class="nav nav-pills">
+                        <a href="addplan.html">
+                        <button class="w3-button w3-sand w3-round-large">Add Task</button></a>
+                        <li class="nav-item"><a href="#" class="nav-link">Activity</a></li>
+                        <li class="nav-item"><a href="TimeBox.html" class="nav-link">Planner</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                        <li class="nav-item"><a href="profile.html" class="nav-link">My Profile</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        <div class="top">
+              <div class="sidebar" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">
+                <div class="d-flex flex-column flex-shrink-0 " style="width: 280px; height: 1000px;">
+                  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32">
+                      <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div style="margin-right: 20px;">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                    <span class="fs-4"> Other</span>
+                  </a>
+                  <hr>
+                  <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="index.html" class="nav-link text-white">
+                          <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="#speedometer2"></use>
+                          </svg>
+                          Home
+                        </a>
+                      </li>
+                    <div class="x1" style="color: black;">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link active" style="background-color: #FDF4E3; color: black;" aria-current="page">                       
+                            <svg class="bi pe-none me-2" width="16" height="16" >
+                              <use xlink:href="#home"></use>
+                            </svg>
+                            HourWise
+                          </a>
+                        </li>
+                      </div>
+                    
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                          <use xlink:href="#table"></use>
+                        </svg>
+                        Categories
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                          <use xlink:href="#grid"></use>
+                        </svg>
+                        Today
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                          <use xlink:href="#people-circle"></use>
+                        </svg>
+                        Notes
+                      </a>
+                    </li>
+                  </ul>
+                  <hr>
+        
+                </div>
+              </div>
+           <div class="leftPanel" style="margin-top: 40px;">
+            <div class="TimeBoxUp" style="margin-top: 10px;">
+              <div class="dateLeft">
+                <button class="w3-button w3-round-large" style="background-color: #705446;"><i class="fa-solid fa-chevron-left" style="color: #FDF4E3; "></i></button>
+              </div>
+              <div class="dateToday" style="margin-top: 5px;">
+                <h3>10 October</h3>
+              </div>
+              <div class="dateRight">
+                <button class="w3-button w3-round-large" style="background-color: #705446;"><i class="fa-solid fa-chevron-right" style="color: #FDF4E3; "></i></button>
+              </div>
+            </div>
+
+
+              <div class="TimeBox1">
+                <div class="T1 TimeBox1_1"><p>6:00</p><p style="padding-left: 210px; font-size: 20px;">~ Read a book</p></div>
+                <div class="T1 TimeBox1_1"><p>7:00</p></div>
+                <div class="T1 TimeBox1_1"><p>8:00</p><p style="padding-left: 210px;font-size: 20px;">~ Learn DSA</p></div>
+                <div class="T1 TimeBox1_1"><p>9:00</p><p style="padding-left: 210px;font-size: 20px;">~ Play Volleyball</p></div>
+                <div class="T1 TimeBox1_1"><p>10:00</p></div>
+                <div class="T1 TimeBox1_1"><p>11:00</p></div>
+                <div class="T1 TimeBox1_1"><p>12:00</p></div>
+                <div class="T1 TimeBox1_1"><p>13:00</p></div>
+                <div class="T1 TimeBox1_1"><p>14:00</p></div>
+                <div class="T1 TimeBox1_1"><p>15:00</p></div>
+                <div class="T1 TimeBox1_1"><p>16:00</p></div>
+                <div class="T1 TimeBox1_1"><p>17:00</p></div>
+              </div>
+            </div>  
+            <div class="rightPanel">
+                <div class="rightTop1">
+                    <div class="rightTop1_1">
+                        <p style="font-size: 20px; color: rgb(172, 2, 2); margin-left: 20px; margin-top: 20px; margin-bottom: 1px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SUNDAY</p>
+                        <p style="font-size: 50px; color: rgb(255, 255, 255); margin-left: 20px; ">8</p>
+                        <p style="font-size: 20px; color: rgb(99, 99, 99); margin-left: 20px; margin-top: 70px;">Irin's Birthday</p>
+                    </div>
+                    <div class="rightTop1_2" style="color: white;">
+                        <p style="font-size: 40px; margin-left: 20px;margin-top: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Indore</p>
+                        <p style="font-size: 50px; color: rgb(255, 255, 255); margin-left: 20px; ">33˚</p>
+                        <p style="font-size: 20px; margin-left: 20px; color: black;">⛅︎</p>
+                        <p style="font-size: 13px; margin-left: 20px; color: black;">Sunny</p>
+                    </div>̊
+                </div>
+
+                <div class="rightTop2">
+                    <div class="rightTop2_1">
+                        <button type="button" class="btn btn-primary" style="border-radius: 50%; font-size:25px;margin-left: 20px;margin-top: 20px;">≔</button> 
+                        <p style="color: rgb(29, 79, 242);">_________________________</p>
+                        <p style="font-size: 15px; color: rgb(192, 191, 191); margin-left: 20px;">Reminders</p>
+                        <p style="font-size: 15px; color: rgb(99, 99, 99); margin-left: 20px;">WebD</p>
+                    </div>
+                    <div class="rightTop2_2">
+                        <div class="clock">
+                            <img src="./clk2.jpeg" style="height: 200px; border-radius: 30px;">
+                        </div>
+                    </div>̊
+                </div>
+
+                <div class="rightTop3">
+                    <div class="rightTop3_1" style="margin-top: 30px;">
+                        <img src="./Notes.png" style="height: 200px; border-radius: 30px;">
+                    </div>
+                    <div class="rightTop3_2" style="margin-top: 30px;">
+                        <img src="./Bar.png" style="height: 200px; border-radius: 30px;">
+                    </div>̊
+                </div>
+
+                <div class="rightTop4">
+                  <div class="rightTop4_1" style="margin-top: 30px;">
+                    <div class="table2 table-borderless" style="border-radius: 20px; background-color: gray; padding: 25px; width: 200px;">
+
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                          </tr>
+                        </thead>
+                        
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                          </tr>
+                          <tr>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                          </tr>
+                          <tr>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        
+                      </table>
+                    </div>
+                  </div>
+                  <div class="rightTop4_2" style="margin-top: 30px;">
+                    <img src="./imagex.png" style="height: 200px; border-radius: 30px;">
+                </div>̊
+              </div>
+            </div> 
+        </div>
+
+
+
+              
+        </div>
+    </header>
+</body>
+</html>
