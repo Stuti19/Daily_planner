@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    padding: 0;
+}
+
+.full{
+    background-image: url(image1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* header */
+.p-3{
+    background-color: #3C3431;
+}
+.nav-item .nav-link {
+    color: #FDF4E3;
+}
+.nav .nav-link {
+    color: #E1C391;
+}
+.nav .nav-link:hover {
+    color: #ae7922;
+}
+
+
+.nav-search{
+    display: flex;
+    height: 40px;
+    margin-left: 100px;
+}
+
+.select{
+    padding-left: 10px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 11px;
+    color:rgb(86, 85, 85);
+    background-color: #E6E6E6;
+    /* background-color: rgba(235, 235, 235, 0.868); */
+}
+.Search-bar:hover{
+    background-color: #ecdfc5;
+}
+.Search-bar{
+    width: 250px;
+    font-size: 15px;
+    padding-left: 10px;
+    background-color: #FDF4E3;
+}
+.search-logo{
+    background-color: black;
+    color: #FDF4E3;
+    width: 35px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 10px;
+    margin-right: 350px;
+}
+.search-logo:hover{
+    background-color:#705446;
+}
+.select {
+    background-color: black;
+    height: 40px;
+    margin-top: 1px;
+  }
+
+.top{
+    display: flex;
+    margin-top: 10px;
+}
+.sidebar{
+    background-color: #3C3431;   
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.section-1{
+    width: 600px;
+    height: 100%;
+    background-color: #f6f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px #3C3431;
+    margin-top: 20px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px;
+    font-style: italic;
+}
+
+.form{
+    background-color: #E1C391;
+    width: 490px;
+    border-radius: 5px;
+}
+
+.taskname{
+    margin-top: 50px;
+}
+.icon{
+    display: flex;
+}
+
+
+.icon1{
+    margin: 5px;
+    padding: 10px;
+}
+.icon5{
+    /* margin: 5px; */
+    padding: 10px;
+}
+.icon3{
+    margin: 5px;
+    padding: 10px;
+}
+.icon4{
+    margin: 5px;
+    padding: 10px;
+}
+
+.star:hover{
+    color:  rgb(54, 203, 79);;
+}
+.trash:hover{
+    color:rgb(212, 36, 36);
+}
